@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120150803-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+    </script> -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta
+			name="description"
+			content="This is an admission aggregate calculator for the University of Lagos."
+		/>
+		<meta name="author" content="Clinton Nkwocha" />
+		<meta name="language" content="English" />
+		<meta
+			name="keywords"
+			content="mdcat, admission aggregate calculator, admission, aggregate, calculator, unilag-calc"
+		/>
+		<title>Admission Aggregate Calculator</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Zilla+Slab"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+		<link rel="stylesheet" href="./css/reset.min.css" type="text/css" />
+		<link rel="stylesheet" href="./css/style.css" type="text/css" />
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>Admission Aggregate Calculator</h1>
+			</header>
+			<main>
+				<div id="background"></div>
+				<div class="wrap">
+					<div id="back" class="card at-back">
+						<h2>Your Aggregate:</h2>
+						<div id="circle">
+							<div id="inner-circle"></div>
+						</div>
+						<form id="result">
+							<input
+								type="submit"
+								value="Reset"
+								id="reset"
+								class="input activate"
+							/>
+						</form>
+					</div>
+					<div id="front" class="card">
+						<h2>Input Your Details</h2>
+						<form id="details">
+							<label for="mdcat-input"> MDCAT Marks </label>
+							<br />
+							<input
+								type="number"
+								name="mdcat-input"
+								id="mdcat-input"
+								class="input"
+								min="0"
+								max="200"
+								required
+							/>
+							<br />
+							<label for="intermediate-input"> F.S.C Marks </label>
+							<br />
+							<input
+								type="number"
+								name="intermediate-input"
+								id="intermediate-input"
+								class="input"
+								min="0"
+								max="1100"
+								required
+							/>
+							<br />
+							<label for="matric-input"> Matric Marks </label>
+							<br />
+							<input
+								type="number"
+								name="matric-input"
+								id="matric-input"
+								class="input"
+								min="0"
+								max="1100"
+								required
+							/>
+							<input
+								type="submit"
+								value="Calculate"
+								id="submit"
+								class="input activate"
+							/>
+						</form>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<p>
+					Made with <b>&#9829;</b> by
+					<a href="https://github.com/ardrag0n" target="_blank"
+						>AR</a
+					>
+				</p>
+			</footer>
+			<!-- <div id="info">
+				<p>
+					Check your post UTME score
+					<a
+						href="./2018_2019_post_UTME_result.pdf"
+						target="_blank"
+						rel="noopener"
+						>here</a
+					>.
+				</p>
+				<p>
+					Check the cut-off mark for your course
+					<a
+						href="./2018 UNILAG CUT OFF Marks.pdf"
+						target="_blank"
+						rel="noopener"
+						>here</a
+					>.
+				</p>
+			</div>
+		</div> -->
+		<script src="./dist/js/script.js"></script>
+	</body>
+</html>
